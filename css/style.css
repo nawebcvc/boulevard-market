@@ -1,0 +1,38 @@
+@import url(fonts.css);
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --nav-bg: #282828;
+    --body-bg: #151515;
+    --not-black: #171718;
+    --montserrat-b: 'Montserrat_Bold';
+    --montserrat-r: 'Montserrat_Regular';
+    --montserrat-m: 'Montserrat_Medium';
+    --prostoone-r: 'ProstoOne_Regular';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    user-select: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
