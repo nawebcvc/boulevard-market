@@ -8,17 +8,52 @@
     .container {
         max-width: 720px;
     }
+
+    .header__title {
+        font-size: 90px;
+    }
+
+    .header__btn {
+        font-size: 17px;
+        padding: 12px 13px;
+    }
 }
 
 @media(max-width: 768px) {
     .container {
         max-width: 540px;
     }
+
+    .header__title {
+        font-size: 70px;
+    }
+
+    .header__btn {
+        font-size: 15px;
+        padding: 10px 11px;
+    }
 }
 
 @media(max-width: 576px) {
     .container {
         max-width: 100%;
+    }
+
+    .nav__block {
+        display: none;
+    }
+
+    .navbar__block {
+        display: flex;
+    }
+
+    .navbar__logo {
+        display: flex;
+    }
+
+    .header__title {
+        font-size: 60px;
+        text-align: center;
     }
 }
 
