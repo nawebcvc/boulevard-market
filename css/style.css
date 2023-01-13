@@ -3,9 +3,11 @@
 :root {
     --white: #fff;
     --black: #000;
+    --red: #FF0000;
     --nav-bg: #282828;
-    --body-bg: #151515;
+    --main-bg: #151515;
     --not-black: #171718;
+    --horizontal-stick: #C4C4C4;
     --montserrat-b: 'Montserrat_Bold';
     --montserrat-r: 'Montserrat_Regular';
     --montserrat-m: 'Montserrat_Medium';
@@ -166,14 +168,14 @@ a {
     border: none;
     border-bottom: 2px solid transparent;
     outline: none;
-    color: white;
+    color: var(--white);
     background: transparent;
     transition: .4s cubic-bezier(0, 0.8, 0, 1);
     opacity: 0;
 }
 
 .search__input::placeholder {
-    color: white;
+    color: var(--white);
 }
 
 .search__input:focus {
@@ -188,12 +190,6 @@ a {
     cursor: pointer;
 }
 
-/* .d6 button:before {
-    content: "";
-    font-size: 16px;
-    color: #F9F0DA;
-} */
-
 .shop__link-logo {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transform: translateY(7px);
@@ -204,13 +200,13 @@ a {
 }
 
 .shop__link::before {
-    content:"";
-    color: red;
+    content: "";
+    color: var(--red);
     font-size: 25px;
     font-weight: 1000;
     top: -9px;
     right: 0;
-    line-height: 18px;        
+    line-height: 18px;
     position: absolute;
 }
 
@@ -259,4 +255,174 @@ a {
     background: var(--white);
     border-radius: 10px;
     padding: 13px 14px;
+}
+
+main {
+    background: var(--main-bg);
+}
+
+.first__headphone {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    padding: 30px 0;
+}
+
+.first__headphone-img {
+    max-width: 552px;
+    width: 100%;
+}
+
+.first__headphone-desc {
+    font-family: var(--montserrat-m);
+    font-size: 22px;
+    line-height: 27px;
+    color: var(--white);
+}
+
+.second__headphone {
+    display: flex;
+    align-items: center;
+    column-gap: 87px;
+    padding: 20px 0;
+}
+
+.second__headphone-img {
+    max-width: 457px;
+    width: 100%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.second__headphone-desc {
+    font-family: var(--montserrat-m);
+    font-size: 22px;
+    line-height: 27px;
+    color: var(--white);
+}
+
+.third__headphone {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 30px 0;
+}
+
+.third__headphone-desc {
+    font-family: var(--montserrat-b);
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    position: relative;
+}
+
+/* ////////////////////////////////// */
+
+.left {
+    text-align: right;
+}
+
+.left::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -27%;
+    width: 61px;
+    height: 1px;
+    background: var(--horizontal-stick);
+}
+
+.right {
+    text-align: left;
+}
+
+.right::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    width: 61px;
+    height: 1px;
+    background: var(--horizontal-stick);
+}
+
+.third__headphone-img {
+    width: 268px;
+}
+
+.third__headphone_horizontal-sticks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 14px;
+}
+
+.third__headphone_horizontal-sticks {
+    margin: 0 86px 0 88px;
+}
+
+.third__headphone_horizontal-sticks::before {
+    content: unset;
+    width: 1px;
+    height: 61px;
+    background: var(--horizontal-stick);
+}
+
+.third__headphone_horizontal-sticks::after {
+    content: unset;
+    width: 1px;
+    height: 61px;
+    background: var(--horizontal-stick);
+}
+
+.smartphones__cards {
+    display: flex;
+    padding: 49px 0 55px;
+    margin: 0 auto;
+    column-gap: 30px;
+}
+
+.smt__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 255px;
+    width: 100%;
+    height: 312px;
+    padding: 15px auto 15px;
+    background: var(--white);
+    border-radius: 6px;
+}
+
+.smt__card-title {
+    font-family: var(--montserrat-b);
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+.smt__card-img {
+    max-height: 167px;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.smt__card-desc {
+    font-family: var(--montserrat-r);
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-bottom: 27px;
+}
+
+.smt__card-btn {
+    padding: 7px 57px;
+    font-family: var(--montserrat-b);
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: var(--white);
+    background: var(--main-bg);
 }

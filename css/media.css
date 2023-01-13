@@ -2,6 +2,14 @@
     .container {
         max-width: 960px;
     }
+
+    .left::after {
+        right: -36%;
+    }
+    
+    .right::before {
+        left: -27%;
+    }
 }
 
 @media(max-width: 992px) {
@@ -17,6 +25,49 @@
         font-size: 17px;
         padding: 12px 13px;
     }
+
+    .third__headphone {
+        row-gap: 0 !important;
+    }
+
+    .third__headphone_horizontal-sticks {
+        margin: 0;
+    }
+
+    .left {
+        margin-bottom: 13px;
+    }
+
+    .right {
+        margin-top: 11px;
+    }
+
+    main .container section {
+        flex-direction: column;
+        row-gap: 30px;
+        text-align: center !important;
+    }
+
+    p {text-align: center !important;}
+
+    .left::after {
+        content: unset;
+    }
+    
+    .right::before {
+        content: unset;
+    }
+
+    .third__headphone_horizontal-sticks::after, .third__headphone_horizontal-sticks::before {
+        content: '';
+    }
+
+    .smartphones__cards {
+        justify-content: center;
+        max-width: 600px;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+    }
 }
 
 @media(max-width: 768px) {
@@ -31,6 +82,10 @@
     .header__btn {
         font-size: 15px;
         padding: 10px 11px;
+    }
+
+    .left::after {
+        top: 80px;
     }
 }
 
