@@ -17,6 +17,11 @@
         max-width: 720px;
     }
 
+    .nav__btn-search .search__input {
+        width: 60%; 
+        height: 30px;
+    }
+
     .header__title {
         font-size: 90px;
     }
@@ -109,6 +114,10 @@
 
     .navbar__block {
         display: flex;
+    }
+
+    .nav__btn-search .search__input {
+        top: 80px; 
     }
 
     .navbar__logo {

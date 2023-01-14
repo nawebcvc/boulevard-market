@@ -144,6 +144,8 @@ a {
     height: 40px;
 }
 
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
 .nav__btns {
     display: flex;
     align-items: center;
@@ -152,35 +154,45 @@ a {
 
 .nav__btn-search {
     background: transparent;
+    width: 20px;
+    height: 20px;
 }
 
 .nav__btn-search form {
     display: flex;
 }
 
-.nav__btn-search .search__input {
-    display: inline;
+.search__input {
     position: absolute;
-    top: 0;
-    right: 62px;
-    height: 50px;
-    width: 25px;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 10px;
+    /* margin-right: 20%;
+    margin-left: 20%; - так тоже можно центрировать*/
+    width: 0;
+    height: 45px;
     border: none;
     border-bottom: 2px solid transparent;
     outline: none;
     color: var(--white);
-    background: transparent;
-    transition: .4s cubic-bezier(0, 0.8, 0, 1);
+    font-family:var(--montserrat-m);
+    /* background: transparent; */
+    background: #00000026;
+    transition: .6s cubic-bezier(0, 0.8, 0, 1);
     opacity: 0;
+    z-index: 99;
 }
 
 .search__input::placeholder {
+    font-family:var(--montserrat-m);
     color: var(--white);
 }
 
-.search__input:focus {
+.search__logo:focus~.search__input {
+    width: 40%;
     opacity: 1;
-    width: 58%;
     border-bottom: 2px solid #F9F0DA;
 }
 
@@ -190,28 +202,35 @@ a {
     cursor: pointer;
 }
 
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.nav__btn-shop {
+    width: 28px;
+}
+
 .shop__link-logo {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transform: translateY(7px);
 }
 
-.nav__btns li:last-child {
-    position: relative;
-}
-
-.shop__link::before {
+.shop__link::after {
     content: "";
+    position: absolute;
+    top: -22px;
+    right: 0;
     color: var(--red);
     font-size: 25px;
     font-weight: 1000;
-    top: -9px;
-    right: 0;
     line-height: 18px;
-    position: absolute;
+
 }
 
-.shop__link:focus::before {
+.shop__link:focus::after {
     content: '.';
+}
+
+.shop__link {
+    position: relative;
 }
 
 .header__banner {
