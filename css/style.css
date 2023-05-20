@@ -127,11 +127,11 @@ a {
     width: 25px;
 }
 
-.navbar__menu:focus img {
+.navbar__menu.active img {
     transform: rotate(218deg);
 }
 
-.navbar__menu:focus~.navbar__list {
+.navbar__menu.active~.navbar__list {
     transform: translateX(0);
 }
 
@@ -182,7 +182,7 @@ a {
     background: #00000026;
     transition: .6s cubic-bezier(0, 0.8, 0, 1);
     opacity: 0;
-    z-index: 99;
+    z-index: -99;
 }
 
 .search__input::placeholder {
@@ -190,10 +190,11 @@ a {
     color: var(--white);
 }
 
-.search__logo:focus~.search__input {
+.search__input.active {
     width: 40%;
     opacity: 1;
     border-bottom: 2px solid #F9F0DA;
+    z-index: 99;
 }
 
 .nav__btn-search button {
