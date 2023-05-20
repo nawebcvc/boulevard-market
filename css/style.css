@@ -144,8 +144,6 @@ a {
     height: 40px;
 }
 
-/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
 .nav__btns {
     display: flex;
     align-items: center;
@@ -169,8 +167,6 @@ a {
     right: 0;
     margin: 0 auto;
     padding: 10px;
-    /* margin-right: 20%;
-    margin-left: 20%; - так тоже можно центрировать*/
     width: 0;
     height: 45px;
     border: none;
@@ -178,7 +174,6 @@ a {
     outline: none;
     color: var(--white);
     font-family:var(--montserrat-m);
-    /* background: transparent; */
     background: #00000026;
     transition: .6s cubic-bezier(0, 0.8, 0, 1);
     opacity: 0;
@@ -202,8 +197,6 @@ a {
     border: none;
     cursor: pointer;
 }
-
-/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 .nav__btn-shop {
     width: 28px;
@@ -334,8 +327,6 @@ main {
     color: var(--white);
     position: relative;
 }
-
-/* ////////////////////////////////// */
 
 .left {
     text-align: right;
